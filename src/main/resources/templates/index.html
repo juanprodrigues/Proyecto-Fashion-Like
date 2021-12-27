@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hello jQuery</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    </head>
+
+    <body>
+
+        
+		<form class="m-4 w-100">
+			<div class="row">
+				<div class="col-6">
+					<input id="nombreProducto" type="text" class="form-control border-primary" placeholder="Cooreo">
+				</div>
+				<div class="col-5">
+					<input id="precioProducto" type="text" class="form-control border-primary" placeholder="Contraseña">
+				</div>
+				<div class="col-1">
+					<button type="button" class="btn btn-primary" id="crearProducto">Crear Usuario</button>
+				</div>
+			</div>
+		</form>
+
+        
+        
+
+        <table class="table m-4 w-100 col-11">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Id Usuario</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Tipo de Rol</th>
+                </tr>
+            </thead>
+            <tbody id="bodyTabla">
+
+            </tbody>
+        </table>
+
+
+
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+                $.ajax({
+                    url: '/usuario/listar',
+                    contentType: "application/json",
+                    type: 'GET',
+                    success: function (data) {
+                        for (var i = 0; i < data.usuarios.length; i += 1) {
+                            $("#bodyTabla").append("<tr><td>" + data.usuarios[i].idRol + "</td><td>" + data.usuarios[i].correo + "</td><td>" + data.usuarios[i].tipoRol + "</td></tr>");
+                        }
+                    },
+                    error: function (data) {
+                        alert("error: " + data.responseJSON.mensaje);
+                    }
+                });
+            });
+
+	$("#crearProducto").click(function () {
+
+			var producto = {
+				correo: $("#nombreProducto").val(),
+				password: $("#precioProducto").val(),
+			}
+
+			$.ajax({
+				url: '/usuario/crear',
+                                data: JSON.stringify(producto),
+				dataType: 'json',
+				contentType: "application/json",
+				type: 'POST',
+				success: function (data) {
+                            $("#bodyTabla").append("<tr><td>" + data.usuarios[i].idRol + "</td><td>" + data.usuarios[i].correo + "</td><td>" + data.usuarios[i].tipoRol + "</td></tr>");
+				},
+				error: function (data) {
+					alert("error: " + data.responseJSON.mensaje);
+				}
+			});
+
+		});
+
+
+
+
+
+        </script>
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+</html>

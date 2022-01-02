@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado de la pagina */
+.descuentos{
+    background-color: #1CD1B0;
+    width: 100%;
+    height: 23px;
+    padding-top:2px;
+    padding-left: 20px;
+}
+
+.titulo{
+    background-color:#00669F;
+    display: flex;
+    align-items: center;
+}
+
+.titulo h1{
+    width: 206px;
+    height: 35px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #001D2D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.menu li{
+    margin: 0 1rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Cuerpo de la pagina */
+
+section{
+    width: 954px;
+    height: 832px;
+    margin-left:243px;
+    margin-top: 40px;
+    margin-bottom:39px;
+    background-color: #00669F;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 49.0901px;
+}
+
+h2{
+    margin-left: 326px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 72px;
+    color: #FBFFFD;
+}
+
+.personaje{
+    margin-left:216px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+/* Formulario 1 */
+.formulario1{
+    margin-top: 20px;
+    margin-right: 123px;
+    margin-left:123px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nombre{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.nombre input{
+    margin-top: 15px;
+    width: 343px;
+    height: 63px;
+    background-color: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15.3407px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.especies{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.especies select{
+    margin-top: 15px;
+    width: 342px;
+    height: 63px;
+    background-color: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15.3407px;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px;
+}
+
+/* Formulario 2 */
+.formulario2{
+    margin-top: 30px;
+    margin-right:244px;
+    margin-left:123px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.fecha{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.fecha input{
+    width: 343px;
+    height: 63px;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 15.3407px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    padding: 10px;
+}
+
+.foto input{
+    width: 223px;
+    height: 32px;
+    margin-left: 21px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #000000;
+    margin-top: 35px;
+}
+
+.foto label{
+    margin-left: 21px;
+}
+
+/* Formulario 3 */
+.formulario3{
+    margin-top: 30px;
+    margin-right:244px;
+    margin-left:123px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formulario3 textarea{
+    width: 343px;
+    height: 307px;
+    background-color: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 15.3407px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color:#000000;
+    padding: 10px;
+}
+
+.poderes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left:22px;
+    width: 343px;
+    height: 312px;
+}
+
+.poderes label{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.poderes p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.poderes input{
+    margin-right:20px ;
+}
+/* Boton */
+section button{
+    width: 466px;
+    height: 87px;
+    background-color: #1CD1B0;
+    border-radius: 23.011px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+    margin-top: 40px;
+    margin-left: 244px;;
+}
+
+button:hover{
+    background-color: #001D2D;
+    color: #FFFFFF;
+}
+/* Pie de pagina */
+footer{
+    background-color: #00669F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 51px;
+}
+
+footer article{
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFF9F9;
+    padding-top: 18px;
+}
+
+

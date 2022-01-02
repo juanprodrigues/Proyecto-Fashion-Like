@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+<link href = "https: //fonts.googleapis.com/css2? family = Roboto & display = swap "rel =" stylesheet ">
+</head>
+</head>
+<body>
+<!-- Encabezado de la pagina -->
+    <header>
+        <article class="descuentos">
+            <p></p>
+        </article>
+        <article class="titulo">
+            <h1></h1>
+        </article>
+    </header>
+<!-- Cuerpo de la pagina -->
+    <section>
+        <h2>Registro</h2>
+        <form action="/registro.html" method="POST">
+            <label for="nombre"></label>
+            <input type="text" name="nombre" placeholder="Nombre y Apellido" id="nombre" required>
+            <label for="correo"></label>
+            <input type="email" name="email" placeholder="Correo Electrónico" id="correo" required>
+            <label for="contraseña"></label>
+            <input type="password" name="contraseña" placeholder="Contraseña" id="contraseña" required>
+            <label for="pais"></label>
+            <select name="pais" id="pais" required>
+                <option value="Arg">Argentina</option>
+                <option value="Col">Colombia</option>
+                <option value="Bra">Brasil</option>
+            </select>
+            <div>
+                <button class="boton1">Resetear</button>
+                <button class="boton2">Registrar</button>
+            </div>
+            <p class="cuenta">¿Ya tenés una cuenta? <a href="#"> Ingresár</a></p>
+        </form>
+    </section>
+<!-- Pie de pagina -->
+    <footer>
+        <article>
+            <p>Todos los derechos reservados a FRONT END 1</p>
+        </article>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;;
+}
+
+/* Encabezado de la pagina */
+.descuentos{
+    background-color: #1CD1B0;
+    width: 100%;
+    height: 23px;
+    padding-top:2px;
+    padding-left: 20px;
+}
+
+.titulo{
+    background-color:#00669F;
+    display: flex;
+    align-items: center;
+}
+
+.titulo h1{
+    width: 206px;
+    height: 35px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #001D2D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.menu li{
+    margin: 0 1rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Cuerpo de la pagina */
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1020px;
+    height: 533px;
+    margin-left: 210px;
+    margin-top: 178px;
+    margin-bottom: 204px;
+}
+
+.card{
+    background-color: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 527px;
+}
+
+.batman{
+    background-image: url("../img/fondos/batman.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.Harley{
+    background-image: url("../img/fondos/HARLEY.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.corazon{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-left: -249px;
+    margin-bottom: 100px;
+    top: 15px;
+}
+
+.heroes{
+    width: 120px;
+    height: 118px;
+    border-radius: 50%;
+    margin-top: -20px;
+}
+
+h2{
+    width: 200px;
+    height: 35px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+    margin-bottom:10px;
+}
+
+.card p{
+    width: 280px;
+    height: 113px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    margin-bottom:37px;
+}
+
+button{
+    width: 128.78px;
+    height: 48.52px;
+    background: #00669F;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #F3F3F3;
+    margin-bottom: 19px;
+}
+
+.circulo{
+    position: absolute;
+    border-radius: 50%;
+    top:495px;
+    left: 1279px;
+    width: 82px;
+    height: 82px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 62px;
+    line-height: 73px;
+}
+
+.circulo:hover{
+    background-color: #001D2D;
+}
+
+/* Pie de la pagina */
+footer{
+    margin-top: 7rem;
+    background-color: #00669F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 51px;
+}
+
+footer article{
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFF9F9;
+    padding-top: 18px;
+}
+
+
+

@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado de la pagina */
+.descuentos{
+    background-color: #1CD1B0;
+    width: 100%;
+    height: 23px;
+    padding-top:2px;
+    padding-left: 20px;
+}
+
+.titulo{
+    background-color:#00669F;
+    display: flex;
+    align-items: center;
+}
+
+.titulo h1{
+    width: 206px;
+    height: 35px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+/* Cuerpo de la pagina */
+
+section{
+    width: 621.12px;
+    height: 428px;
+    margin-top: 230px;
+    margin-left: 430px;
+    margin-bottom: 294px;
+}
+
+h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 72px;
+    color: #333333;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 55px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21.4769px;
+    line-height: 28px;
+    text-align: center;
+}
+
+input{
+    margin-bottom: 20px;
+    width: 620px;
+    height: 60px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    border: 1.53407px solid #000000;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+button{
+    width: 614.25px;
+    height: 53.79px;
+    background-color: #1CD1B0;
+    border-radius: 23.011px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+    margin-top: 39px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cuenta{
+    margin-top: 20px;
+}
+/* Pie de la pagina */
+footer{
+    background-color: #00669F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 51px;
+}
+
+footer article{
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFF9F9;
+    padding-top: 18px;
+}
+
+
+
+
+
+

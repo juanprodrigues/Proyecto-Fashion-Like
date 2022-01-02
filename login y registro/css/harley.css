@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado de la pagina */
+.descuentos{
+    background-color: #1CD1B0;
+    width: 100%;
+    height: 23px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.titulo{
+    background-color:#00669F;
+    display: flex;
+    align-items: center;
+    height: 101px;
+    padding: 20px;
+}
+
+.titulo h1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+/* Cuerpo de la pagina */
+section{
+    background-image: url("../img/fondos/harley2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.harley{
+    position: absolute;
+    width: 159px;
+    height: 159px;
+    border-radius: 50%;
+    left: 646px;
+    top: 243px;
+}
+
+section article{
+    width: 546px;
+    height: 456px;
+    margin-top: 215px;
+    margin-left: 449px;
+    margin-bottom:203px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3F3F3;
+    border-radius: 45px;
+}
+
+.corazon{
+    margin-top: 52.14px;
+    margin-left: -476px ;
+
+}
+
+h2{
+    background-color: #F3F3F3;
+    border-radius: 45px;
+    margin-bottom: 10px;
+}
+
+.texto{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    margin-left: 23px;
+    margin-bottom: 14px;
+}
+
+div{
+    width: 247.44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+button{
+    width: 546px;
+    height: 87px;
+    background: #2C0187;
+    border-radius: 0px 0px 45px 45px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.volver{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+    color:#2C0187;
+}
+
+.titulo2{
+    text-decoration: underline;
+    color:#2C0187;
+}
+
+/* Pie de la pagina */
+footer{
+    background-color: #00669F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 51px;
+}
+
+footer article{
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFF9F9;
+    padding-top: 18px;
+}

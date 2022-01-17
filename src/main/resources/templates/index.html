@@ -6,48 +6,49 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Hello jQuery</title>
+        <title>Iniciar secion</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+        
+           <link rel="stylesheet" href="/css/style-index.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
     </head>
 
     <body>
+        <div class="conatiner">
+            <div class="sub-conatiner">
+            <div class="diseños-container">
+                <h2>¿Diseños Propios?</h2>
+            </div>
 
+            <form action="#" class="form">
+            <input type="submit" value="Facebook" class="btn ingreso-facebook">
+            <input type="submit" value="Google" class="btn ingreso-google">
+            
+            <p>Ó</p>
+
+            <input type="text" placeholder="Usuario" class="user-input " >
+            <input type="password" placeholder="*******" class="password-input ">
+          
+
+            </form>
+
+            <div class="container-image">
+                <h2>Observa nuestra comunidad</h2>
+            </div> 
+                <div class="botones">
+            <input type="submit" value="Ingresar" class="btn-ingresar">
+            <a href="#">¿Olvidaste tu clave?</a>
+
+            <input type="submit" value="¡Registrate acá!" class="btn-register">
+            </div>
+        </div>
+    </div>
         
-		<form class="m-4 w-100">
-			<div class="row">
-				<div class="col-6">
-					<input id="nombreProducto" type="text" class="form-control border-primary" placeholder="Cooreo">
-				</div>
-				<div class="col-5">
-					<input id="precioProducto" type="text" class="form-control border-primary" placeholder="Contraseña">
-				</div>
-				<div class="col-1">
-					<button type="button" class="btn btn-primary" id="crearProducto">Crear Usuario</button>
-				</div>
-			</div>
-		</form>
 
-        
-        
-
-        <table class="table m-4 w-100 col-11">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">Id Usuario</th>
-                    <th scope="col">Correo</th>
-                    <th scope="col">Tipo de Rol</th>
-                </tr>
-            </thead>
-            <tbody id="bodyTabla">
-
-            </tbody>
-        </table>
 
 
 

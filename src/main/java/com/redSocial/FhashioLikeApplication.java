@@ -1,13 +1,12 @@
 package com.redSocial;
 
-import com.redSocial.Repositorio.PosteoRepositorio;
-import com.redSocial.Repositorio.ReaccionRepositorio;
-import com.redSocial.Repositorio.RolRepositorio;
-import com.redSocial.Repositorio.UsuarioRepositorio;
+import com.redSocial.repositorio.RolRepositorio;
+import com.redSocial.repositorio.UsuarioRepositorio;
 import com.redSocial.entidad.*;
 import com.redSocial.enums.tipo;
-import java.util.HashSet;
-import java.util.Set;
+
+import com.redSocial.modelos.entidad.Rol;
+import com.redSocial.modelos.entidad.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

@@ -3,20 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.redSocial.Servicios;
+package com.redSocial.servicios;
 
-import com.redSocial.entidad.*;
 import java.util.*;
-import org.springframework.stereotype.Service;
+
+import com.redSocial.modelos.dto.UsuarioDTO;
+import com.redSocial.modelos.entidad.Rol;
 
 /**
  *
  * @author JuanPC
  */
 
-@Service
 public interface UsuarioServicio {
     
      List<Rol> usuarios();
      void crear(Rol producto);
+
+     UsuarioDTO crear(UsuarioDTO usuarioDTO);
 }

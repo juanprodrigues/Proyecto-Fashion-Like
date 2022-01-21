@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.redSocial.Repositorio;
+package com.redSocial.repositorio;
 
 import com.redSocial.entidad.*;
+import com.redSocial.modelos.entidad.Posteo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

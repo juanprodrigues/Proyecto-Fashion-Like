@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.redSocial.ServiciosImlp;
+package com.redSocial.servicios.impl;
 
-import com.redSocial.Repositorio.RolRepositorio;
-import com.redSocial.Servicios.UsuarioServicio;
-import com.redSocial.entidad.Rol;
+import com.redSocial.repositorio.RolRepositorio;
+import com.redSocial.servicios.UsuarioServicio;
+import com.redSocial.modelos.dto.UsuarioDTO;
+import com.redSocial.modelos.entidad.Rol;
 import com.redSocial.enums.tipo;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,13 @@ public class UsuariosServicioImpl implements UsuarioServicio{
         producto.setTipoRol(tipo.USUARIO);
     rolRepositorio.save(producto);
     }
-    
-    
+
+    @Override
+    public UsuarioDTO crear(UsuarioDTO usuarioDTO) {
+
+        return null;
+
+    }
+
+
 }

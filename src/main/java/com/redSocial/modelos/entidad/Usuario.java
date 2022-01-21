@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.redSocial.entidad;
+package com.redSocial.modelos.entidad;
 
 import java.util.Date;
 import java.util.*;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -32,13 +30,14 @@ public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idUsuario;
+    private Long idUsuario;
     private String nombre;
     private String apellido;
     private String direccion;
     private String apodo;
     private String foto;
-    private int dni;
+    private String videoPresentacion;
+    private Long dni;
     private Boolean alta;
 
  

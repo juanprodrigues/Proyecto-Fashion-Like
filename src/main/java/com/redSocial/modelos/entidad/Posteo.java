@@ -3,16 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.redSocial.entidad;
+package com.redSocial.modelos.entidad;
 
-import com.redSocial.enums.tipo;
-import javax.annotation.Generated;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import lombok.Data;
 
 /**
@@ -21,15 +19,16 @@ import lombok.Data;
  */
 @Entity
 @Data
-public class Rol {
+public class Posteo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Integer idRol;
-    private String correo;
-    private String password;
-    
-    @Enumerated(EnumType.STRING)
-    private tipo tipoRol;
+    private Integer idPosteo;
+    @ManyToOne
+    @JoinColumn(name = "usuario")
+    private Usuario usuario;
+    private String descipcion;
+    private Boolean alta;
+    private String imagenPosteo;
 
 }

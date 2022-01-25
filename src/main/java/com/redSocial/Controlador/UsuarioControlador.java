@@ -5,11 +5,16 @@
  */
 package com.redSocial.Controlador;
 
+import com.redSocial.modelos.dto.UsuarioDTO;
 import com.redSocial.servicios.UsuarioServicio;
 import com.redSocial.modelos.entidad.AjaxResponseProductos;
 import com.redSocial.modelos.entidad.Rol;
+
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -42,7 +47,7 @@ public class UsuarioControlador {
     @ResponseBody
     public ResponseEntity<AjaxResponseProductos> listar() {
 
-        AjaxResponseProductos resultado = new AjaxResponseProductos();
+        /* AjaxResponseProductos resultado = new AjaxResponseProductos();
         //Este producto no es el toma el ajax
         try {
 
@@ -54,14 +59,14 @@ public class UsuarioControlador {
             resultado.setMensaje(e.getMessage());
 
             return ResponseEntity.badRequest().body(resultado);
-        }
-        return ResponseEntity.ok(resultado);
+        } */
+        return ResponseEntity.ok(null);
     }
     
     @PostMapping("/crear")
     @ResponseBody
     public ResponseEntity<AjaxResponseProductos> crear(@RequestBody Rol producto) {
-        AjaxResponseProductos resultado = new AjaxResponseProductos();
+        /* AjaxResponseProductos resultado = new AjaxResponseProductos();
         try {
             System.out.println("ingreso de prodicto: "+producto.toString());
             usuarioServicio.crear(producto);
@@ -70,9 +75,17 @@ public class UsuarioControlador {
             resultado.setMensaje(e.getMessage());
 
             return ResponseEntity.badRequest().body(resultado);
-        }
-        return ResponseEntity.ok(resultado);
+        } */
+        return ResponseEntity.ok(null);
 
+    }
+
+    @PostMapping("/nuevo")
+    public ResponseEntity<?> crearUsuarioNuevo(@RequestBody UsuarioDTO usuarioDTO) throws URISyntaxException {
+        usuarioDTO = usuarioServicio.crear(usuarioDTO);
+        return ResponseEntity.created(new URI("/nuevo"))
+                .header(String.valueOf(HttpStatus.CREATED))
+                .body(null);
     }
 
 }

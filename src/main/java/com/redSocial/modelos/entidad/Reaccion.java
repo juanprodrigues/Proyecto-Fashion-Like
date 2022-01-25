@@ -26,10 +26,10 @@ public class Reaccion {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer idReacionl;
-    @ManyToOne
-    private Usuario usuario;
+    /* @ManyToOne
+    private Usuario usuario; */
     private String dislike;
     private Boolean alta;
-    @ManyToMany(mappedBy = "likes_dados")
-    private Set<Usuario> likes = new HashSet<>();
+    /* @ManyToMany(mappedBy = "likes_dados")
+    private Set<Usuario> likes = new HashSet<>(); */
 }

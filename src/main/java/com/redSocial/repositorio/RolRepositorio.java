@@ -5,10 +5,13 @@
  */
 package com.redSocial.repositorio;
 
-import com.redSocial.entidad.*;
+import com.redSocial.modelos.entidad.*;
 import com.redSocial.modelos.entidad.Rol;
+import com.redSocial.modelos.enums.tipo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
 
 /**
  *
@@ -16,5 +19,7 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface RolRepositorio extends JpaRepository<Rol,Integer>{
+
+    Optional<Rol> findByTipoRol(tipo roleNombre);
     
 }

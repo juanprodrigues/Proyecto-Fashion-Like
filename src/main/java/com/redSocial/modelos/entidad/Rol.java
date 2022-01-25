@@ -5,15 +5,13 @@
  */
 package com.redSocial.modelos.entidad;
 
-import com.redSocial.enums.tipo;
-import javax.annotation.Generated;
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.redSocial.modelos.enums.tipo;
+
+import javax.persistence.*;
+
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  *
@@ -21,13 +19,11 @@ import lombok.Data;
  */
 @Entity
 @Data
-public class Rol {
+public class Rol implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Integer idRol;
-    private String correo;
-    private String password;
+    private Integer id;
     
     @Enumerated(EnumType.STRING)
     private tipo tipoRol;

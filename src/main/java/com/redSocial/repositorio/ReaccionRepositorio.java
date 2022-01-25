@@ -5,7 +5,6 @@
  */
 package com.redSocial.repositorio;
 
-import com.redSocial.entidad.*;
 import com.redSocial.modelos.entidad.Reaccion;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

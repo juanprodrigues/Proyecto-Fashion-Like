@@ -5,19 +5,11 @@
  */
 package com.redSocial.modelos.entidad;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.*;
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import javax.persistence.*;
+
 import lombok.Data;
 
 /**
@@ -26,7 +18,8 @@ import lombok.Data;
  */
 @Entity
 @Data
-public class Usuario {
+@Table(name = "usuarios")
+public class Usuario implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -37,35 +30,36 @@ public class Usuario {
     private String apodo;
     private String foto;
     private String videoPresentacion;
-    private Long dni;
+
     private Boolean alta;
 
  
-    @ManyToMany
+    /* @ManyToMany
     private Set<Reaccion> likes_dados = new HashSet<Reaccion>();
 
     @OneToMany(mappedBy = "usuario", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    private Set<Posteo> posteosLista = new HashSet<Posteo>();
+    private Set<Posteo> posteosLista = new HashSet<Posteo>(); */
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    private Set<Usuario> amigos = new HashSet<Usuario>();
+    /* @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    private Set<Usuario> amigos = new HashSet<Usuario>(); */
 
     @Temporal(TemporalType.DATE)
     private Date fechaNacio;
 
-    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    private Rol rol;
+    @OneToOne
+    @JoinColumn(name = "user_id", nullable = false, updatable = false)
+    private User user;
 
-    public void addAmigo(Usuario u) {
+    /* public void addAmigo(Usuario u) {
         this.amigos.add(u);
-    }
+    } */
 
-    public void addPost(Posteo post2) {
+    /* public void addPost(Posteo post2) {
         this.posteosLista.add(post2);
-    }
+    } */
 
-    public void addLike(Reaccion u) {
+    /* public void addLike(Reaccion u) {
         this.likes_dados.add(u);
-    }
+    } */
 
 }

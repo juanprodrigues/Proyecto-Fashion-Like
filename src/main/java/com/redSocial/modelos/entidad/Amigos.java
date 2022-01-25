@@ -27,7 +27,7 @@ public class Amigos {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    private List<Usuario> usuariosLista;
+    /* @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    private List<Usuario> usuariosLista; */
 
 }

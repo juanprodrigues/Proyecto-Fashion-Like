@@ -24,9 +24,9 @@ public class Posteo {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer idPosteo;
-    @ManyToOne
+    /* @ManyToOne
     @JoinColumn(name = "usuario")
-    private Usuario usuario;
+    private Usuario usuario; */
     private String descipcion;
     private Boolean alta;
     private String imagenPosteo;
